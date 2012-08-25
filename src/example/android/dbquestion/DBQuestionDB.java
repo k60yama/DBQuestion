@@ -53,6 +53,9 @@ public class DBQuestionDB extends Activity {
 			
 			//トランザクション制御終了
 			db.endTransaction();
+
+			//DB閉じる
+			db.close();
 			
 			//メッセージ表示
 			Toast.makeText(this, "データを登録しました。", Toast.LENGTH_SHORT).show();
