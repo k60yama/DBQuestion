@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- アプリケーションタイトル ここから-->
+    <TextView 
+        android:text="@string/app_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- アプリケーションタイトル ここまで-->
+    
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <!-- 名前 ここから -->
+        <TableRow>
+            <TextView android:text="@string/name_label" />
+            <TextView 
+                android:id="@+id/name"
+                android:layout_span="4"
+                android:text="" />
+        </TableRow>
+        <!-- 名前 ここまで -->
+        
+        <!-- 住所 ここから -->
+        <TableRow>
+            <TextView android:text="@string/address_label" />
+            <TextView 
+                android:id="@+id/address"
+                android:layout_span="4"
+                android:text="" />
+        </TableRow>
+        <!-- 住所 ここまで -->
+        
+        <!-- 生年月日 ここから -->
+        <TableRow
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_marginRight="10dp"
+                android:text="@string/birthday_label" />
+            <TextView 
+                android:id="@+id/month"
+                android:text=""
+                android:width="30dp" />
+            <TextView 
+                
+                android:text="@string/month_label" />
+            <TextView 
+                android:id="@+id/day"
+                android:text=""
+                android:width="30dp" />
+            <TextView android:text="@string/day_label" />
+        </TableRow>
+        <!-- 生年月日 ここまで -->
+        
+        <!-- 性別 ここから -->
+        <TableRow>
+            <TextView android:text="@string/sex_label" />
+            <TextView 
+                android:layout_span="4"
+                android:id="@+id/sex"
+                android:text="" />
+        </TableRow>
+        <!-- 性別 ここまで -->
+    </TableLayout>"
+
+	<!-- 注文リスト ここから -->
+	<TableLayout
+	    android:layout_marginTop="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="50dp"
+	    android:layout_marginLeft="50dp"
+	    android:stretchColumns="0" >
+        
+	    <TableRow android:background="#003399">
+	        <TextView android:text="@string/item_label"/>
+	        <TextView android:text="@string/itemnum_label"/>
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView android:text="@string/apple_label"/>
+	        <TextView 
+	            android:id="@+id/apple_num"
+	            android:text=""/>
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView android:text="@string/orange_label"/>
+	        <TextView 
+	            android:id="@+id/orange_num"
+	            android:text=""/>
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView android:text="@string/peach_label"/>
+	        <TextView 
+	            android:id="@+id/peach_num"
+	            android:text=""/>
+	    </TableRow>
+	    
+	</TableLayout>
+	<!-- 注文リスト ここまで -->
+
+	<Button 
+	    android:id="@+id/confirm"
+	    android:text="@string/button_confirm"
+	    android:layout_width="180dp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center" />
+	
+	<Button 
+	    android:id="@+id/back"
+	    android:text="@string/button_back"
+	    android:layout_width="180dp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center" />
+
+	
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DBQuestionActivity!</string>
+    <string name="app_name">DBQuestion</string>
+
+       <string name="app_title">お申し込みフォーム</string>
+    <string name="name_label">お名前：</string>
+    <string name="address_label">住所：</string>
+    <string name="birthday_label">生年月日：</string>
+    <string name="month_label">月</string>
+    <string name="day_label">日</string>
+    <string name="sex_label">性別：</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+	<string name="item_label">希望商品</string>
+	<string name="itemnum_label">注文数量</string>
+	<string name="apple_label">りんご</string>
+	<string name="orange_label">みかん</string>
+	<string name="peach_label">もも</string>
+    <string name="button_send">送信</string>
+    <string name="button_confirm">確認</string>
+    <string name="button_back">戻る</string>
+    <string name="thanks_msg">お申し込みありがとうございました。</string>
+	
+    <string-array name="month">
+        <item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+    </string-array>
+    
+    <string-array name="day">
+        <item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+		<item>15</item>
+		<item>16</item>
+		<item>17</item>
+		<item>18</item>
+		<item>19</item>
+		<item>20</item>
+		<item>21</item>
+		<item>22</item>
+		<item>23</item>
+		<item>24</item>
+		<item>25</item>
+		<item>26</item>
+		<item>27</item>
+		<item>28</item>
+		<item>29</item>
+		<item>30</item>
+		<item>31</item>        
+    </string-array>
+    
+</resources>

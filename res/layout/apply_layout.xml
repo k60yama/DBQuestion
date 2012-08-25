@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- アプリケーションタイトル ここから -->
+	<TextView 
+	    android:text="@string/app_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    <!-- アプリケーションタイトル ここまで-->
+	
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	    <!-- 名前 ここから -->
+	    <TableRow>
+	        <TextView android:text="@string/name_label" />
+	        <EditText 
+	            android:layout_span="4"
+	            android:id="@+id/name" />
+	    </TableRow>
+	    <!-- 名前 ここまで -->
+	    
+	    <!-- 住所 ここから -->
+	    <TableRow>
+	        <TextView android:text="@string/address_label" />
+	        <EditText 
+	            android:layout_span="4"
+	            android:id="@+id/address" />
+	    </TableRow>
+	    <!-- 住所 ここまで -->
+	    
+	    <!-- 生年月日 ここから -->
+	    <TableRow>
+	        <TextView android:text="@string/birthday_label" />
+	        <Spinner 
+	            android:id="@+id/month"
+	            android:entries="@array/month" />
+	        <TextView android:text="@string/month_label" />
+	        <Spinner 
+	            android:id="@+id/day"
+	            android:entries="@array/day" />
+	        <TextView android:text="@string/day_label" />
+	    </TableRow>
+	    <!-- 生年月日 ここまで -->
+	    
+	    <!-- 性別 ここから -->
+	    <TableRow>
+	        <TextView 
+	            android:text="@string/sex_label"
+	            android:layout_marginTop="12dp" />
+	        <RadioGroup 
+	            android:id="@+id/sexgroup"
+	            android:orientation="horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_span="4" >"
+	            
+	            <RadioButton 
+	                android:id="@+id/male"
+	                android:text="@string/male" />"
+	            
+	            <RadioButton 
+	                android:id="@+id/female"
+	                android:text="@string/female" />
+	            
+	        </RadioGroup>
+	    </TableRow>
+	    <!-- 性別 ここまで -->
+	    
+	</TableLayout>
+	
+	<!-- 注文リスト ここから -->
+	<TableLayout 
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginRight="50dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="0" >
+	    
+	    <TableRow android:background="#003399" >
+	        <TextView android:text="@string/item_label" />
+	        <TextView android:text="@string/itemnum_label" />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <CheckBox 
+	            android:id="@+id/apple_chk"
+	            android:text="@string/apple_label" />
+	        <EditText android:id="@+id/apple_num" />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <CheckBox 
+	            android:id="@+id/orange_chk"
+	            android:text="@string/orange_label" />
+	        <EditText android:id="@+id/orange_num" />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <CheckBox 
+	            android:id="@+id/peach_chk"
+	            android:text="@string/peach_label" />
+	        <EditText android:id="@+id/peach_num" />
+	    </TableRow>
+	</TableLayout>
+	<!-- 注文リスト ここまで -->
+	
+	<!-- 送信ボタン ここから -->
+	<Button 
+	    android:id="@+id/send"
+	    android:text="@string/button_send"
+	    android:layout_gravity="center"
+	    android:layout_width="180dp"
+	    android:layout_height="wrap_content" />
+	
+	<!-- 送信ボタン ここまで -->
+	
+</LinearLayout>
